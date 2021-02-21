@@ -1,0 +1,16 @@
+.Link {
+  color: inherit;
+}
+
+.Link:hover {
+  text-decoration: none;
+}
+
+.Article {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.Article:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,8 @@
+.ErrorLoadingHandler {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.Error {
+  color: rgb(160, 42, 42);
+}

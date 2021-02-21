@@ -1,0 +1,28 @@
+.Search,
+.SortsAndPagination,
+.ArticlesList,
+.Sorts,
+.Pagination {
+  padding: 10px 0;
+}
+
+.SortsAndPagination::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Sorts,
+.Pagination {
+  float: right;
+}
+
+@media screen and (min-width: 700px) {
+  .Sorts {
+    float: left;
+  }
+
+  .Pagination {
+    float: right;
+  }
+}

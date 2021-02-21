@@ -1,0 +1,25 @@
+.ImageLoading {
+  position: relative;
+  animation-name: imageLoader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes imageLoader {
+  0% {
+    background-color: rgb(135, 135, 135, 0.4);
+  }
+  50% {
+    background-color: rgb(135, 135, 135, 0.6);
+  }
+  100% {
+    background-color: rgb(135, 135, 135, 0.4);
+  }
+}
+
+.Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
