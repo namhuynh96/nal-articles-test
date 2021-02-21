@@ -78,19 +78,19 @@ const Query: React.FC<IQueryProps> = (props) => {
       </div>
 
       <div className={classes.SortsAndPagination}>
+        <div className={classes.Pagination}>
+          <Pagination
+            currentPage={pageQuery ? pageQuery : 1}
+            isLastPage={props.isLastPage}
+            onQuery={(value) => queryHandler("page", value.toString())}
+          />
+        </div>
         <div className={classes.Sorts}>
           <Sorts
             initialSortBy={sortByQuery}
             initialOrderBy={orderByQuery}
             onSortQuery={(value) => queryHandler("sortBy", value)}
             onOrderQuery={(value) => queryHandler("order", value)}
-          />
-        </div>
-        <div className={classes.Pagination}>
-          <Pagination
-            currentPage={pageQuery ? pageQuery : 1}
-            isLastPage={props.isLastPage}
-            onQuery={(value) => queryHandler("page", value.toString())}
           />
         </div>
       </div>
